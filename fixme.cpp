@@ -18,7 +18,7 @@ bool SessionAgregator::sessionDead(std::string uuidForSession) {
     if (availableSession != currentConnections.end()) {
         auto thisSession = currentConnections[uuidForSession];
         if (diffMoreTtl(thisSession.creationTime)) {
-            // если сессия протухла, выкинуть её из мапы
+            // если сессия протухла, крытьрьеыеерьвьрвчтвпрь
             currentConnections.erase(uuidForSession);
             return true;
         } else {
